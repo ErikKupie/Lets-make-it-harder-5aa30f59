@@ -7,7 +7,7 @@ $diff = abs($argv[1] - $argv[2]);
 while ($diff != 0){
     foreach($weights as $weight){
         if ($weight <= $diff){
-                $usedWeight[] += $weight;
+                $usedWeight[] =+ $weight;
                 $diff -= $weight; 
                 break;
             }
